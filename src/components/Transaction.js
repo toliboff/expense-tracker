@@ -1,9 +1,10 @@
 import React from 'react'
 
-const Transaction = () => {
+const Transaction = ({ transaction }) => {
   return (
-    <div>
-      Transaction
+    <div key={transaction.id}>
+      <h2>{transaction.title}</h2>
+      <span>{transaction.amount}</span>
     </div>
   )
 }
